@@ -1,0 +1,9 @@
+<div class="wrap">
+  <h1>All The Very Important (#NOT) News</h1>
+  <div class="each" *ngFor="let new of newes">
+    <a [routerLink]="['/']">
+      <h2>{{ new.title }}</h2>
+      <p>{{ new.body }}</p>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "gender": "Male",
+      "department": "operations",
+      "salary": 10000,
+      "branch": "green",
+      "position": "smasher",
+      "company": "avengers",
+      "phonenumber": 990909090,
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "gender": "Male",
+      "department": "finance",
+      "salary": 10000,
+      "branch": "yello",
+      "position": "casher",
+      "company": "gurdians",
+      "phonenumber": 980808080,
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "gender": "Female",
+      "department": "managment",
+      "salary": 10000,
+      "branch": "red",
+      "position": "manager",
+      "company": "justice League",
+      "phonenumber": 987654321,
+      "email": "ann@codingthesmartway.com"
+    }
+  ],
+  "department": [
+    {
+      "id": 9,
+      "name": "finance",
+      "company": "gurdians"
+    },
+    {
+      "id": 8,
+      "name": "operations",
+      "company": "gurdians"
+    },
+    {
+      "id": 9,
+      "name": "managment",
+      "company": "gurdians"
+    }
+  ],
+  "company": [
+    {
+      "name": "xlkjhg",
+      "id": 14
+    },
+    {
+      "id": 11,
+      "name": "avengers",
+      "logo": "assets/Flower.png"
+    },
+    {
+      "id": 12,
+      "name": "gurdians",
+      "logo": "assets/Calendar.png"
+    },
+    {
+      "name": "League one",
+      "logo": "assets/tools.png",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "name": "League one",
+      "logo": "assets/tools.png"
+    },
+    {
+      "name": "League one",
+      "id": 21,
+      "logo": "assets/Flower.png"
+    },
+    {
+      "name": "Boot Man",
+      "id": 22,
+      "logo": "assets/rocket.png"
+    },
+    {
+      "name": "x men",
+      "id": 23,
+      "logo": "assets/Pig with coins.png"
+    },
+    {
+      "name": "x men",
+      "id": 25,
+      "logo": "assets/Pig with coins.png"
+    },
+    {
+      "name": "Captain Jack Sparrow",
+      "id": 30,
+      "logo": "assets/Calendar.png"
+    },
+    {
+      "name": "dowrf",
+      "id": 31,
+      "logo": "assets/lamp.png"
+    },
+    {
+      "name": "Aqua Man Fat Man",
+      "id": 32,
+      "logo": "assets/tools.png"
+    },
+    {
+      "name": "gdgd",
+      "id": 33
+    },
+    {
+      "name": "fgggg",
+      "id": 34
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+<div class="box" *ngIf="companyData | async as cp">
+  <h2>{{cp?.name}}</h2>
+  <div class="title">
+    <h3>Departments</h3>
+    <div class="nav">
+      <button class="buton" mat-raised-button routerLink="alistemployee" >All Employees</button>
+      <button class="buton" mat-raised-button *ngFor="let item of cp.departments" routerLink={{item}} >{{item}}</button >
+    </div>
+  </div>
+  <div class="imgdiv">
+    <img class="img" src="{{cp.logo}}" alt="logo">
+  </div>
+  <p>{{cp?.description}}</p>
+
+</div>

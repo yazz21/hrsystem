@@ -1,0 +1,27 @@
+.wrapper {
+  height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    min-width: 200px;
+    width: 50%;
+    align-content: center;
+    padding: 30px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+button {
+    width: 50%;
+}
+
+.file-select-button, .file-name {
+  display: inline-block;
+  margin: 8px;
+}
+
+.container {
+  padding: 0 20px 20px 0
+}

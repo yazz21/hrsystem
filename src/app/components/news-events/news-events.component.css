@@ -1,0 +1,21 @@
+.wrap {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    gap: 20px;
+}
+
+.each {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    box-shadow: rgb(0 0 0 / 87%) 3px 3px 5px 2px;
+    padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

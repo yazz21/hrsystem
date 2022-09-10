@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <div class="image-div">
+    <img class="image" src="../../../assets/beach.jpg" alt="hk" />
+  </div>
+
+  <div class="mat-card-div">
+    <mat-card
+      class="card-company"
+      *ngFor="let data of companydata"
+      type="button"
+      [routerLink]="['../', 'company', data.id]"
+      (click)="onSelectCompany(data.id)"
+    >
+      <mat-card-header>
+        <mat-card-title>{{ data.name }}</mat-card-title>
+        <mat-card-subtitle>{{ data.id }}</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-md-image
+        class="card-image"
+        src="../../../{{ data.logo }}"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <span>{{ data.description | summery }} </span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="news-events">
+    <article class="news-events-card" *ngFor="let item of newsdata">
+      <a
+        type="button"
+        [routerLink]="['../', 'newsandevents', item.id]"
+        (click)="onSelectItem(item.id)"
+      >
+        <section class="news-events-title">
+          <h3>{{ item.title }}</h3>
+        </section>
+        <section class="news-body">
+          <p>{{ item.body }}</p>
+        </section>
+      </a>
+    </article>
+  </div>
+
+  <div class="footer"></div>
+</div>

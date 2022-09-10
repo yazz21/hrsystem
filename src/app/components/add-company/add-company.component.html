@@ -1,0 +1,59 @@
+<div class="wrapper">
+  <form class="wrap" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Company Name</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="company name"
+        formControlName="name"
+      />
+      <mat-error *ngIf="hasError('name', 'required')">Name is required</mat-error>
+  <mat-error *ngIf="hasError('name', 'maxlength')">You have more than 60 characters</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Select Department</mat-label>
+      <mat-select formControlName="department" [(value)]="selected">
+        <mat-option>None</mat-option>
+        <mat-option value="Managment">Managment</mat-option>
+        <mat-option value="Developers">Developers</mat-option>
+        <mat-option value="Network Enginers">Network Enginers3</mat-option>
+        <mat-option value="Finance">Finance</mat-option>
+        <mat-option value="Operations">Operations</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="container">
+      <input
+        type="file"
+        style="display: none"
+        #fileInput
+        accept="image/*"
+        (change)="onChangeFileInput()"
+      />
+      <button
+        mat-raised-button
+        color="primary"
+        class="file-select-button"
+        (click)="onClickFileInputButton()"
+        disabled
+      >
+        <mat-icon>image</mat-icon>
+        Logo
+      </button>
+
+      <p class="file-name" *ngIf="!file; else fileName">file picker</p>
+      <ng-template #fileName>
+        <p class="file-name">{{ file?.name }}</p>
+      </ng-template>
+    </div>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <button [disabled]=!profileForm.valid mat-raised-button color="primary" type="submit">Add Company</button>
+  </form>
+</div>

@@ -1,0 +1,96 @@
+.wrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-div {
+    max-height: 50vh;
+    overflow: hidden;
+}
+
+.image {
+    height: inherit;
+    width: 100%;
+}
+
+.mat-card-div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: scroll;
+    /* height: 25vh; */
+    width: 100%;
+
+}
+
+.card-image {
+
+    width: 150px;
+}
+
+.card-company {
+   display: flex;
+    flex-direction: column;
+    /* width: 200px; */
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+  }
+a  {
+  text-decoration: none;
+}
+a::before{
+  text-decoration: none;
+}
+a::after
+{
+  text-decoration: none;
+}
+
+.news-events {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  box-shadow: 3px 3px 3px 1px #43433b;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.news-events-card {
+    min-width: 150px;
+    height: 300px;
+    width: 250px;
+    border-radius: 2px;
+    margin: 10px 0 0 10px ;
+    box-shadow: rgba(0, 0, 0, 0.87) 4px -5px 0px 1px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.news-events-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.news-events-title h3 {
+}
+
+.news-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    height: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

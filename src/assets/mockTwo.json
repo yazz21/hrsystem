@@ -1,0 +1,238 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "gender": "Male",
+      "department": "operations",
+      "salary": 10000,
+      "branch": "green",
+      "position": "smasher",
+      "company": "avengers",
+      "phonenumber": 990909090,
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "gender": "Male",
+      "department": "Finance",
+      "salary": 10000,
+      "branch": "yellO",
+      "position": "casher",
+      "company": "gurdians",
+      "phonenumber": 980808080,
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "gender": "Female",
+      "department": "managment",
+      "salary": 10000,
+      "branch": "red",
+      "position": "manager",
+      "company": "justice League",
+      "phonenumber": 987654321,
+      "email": "ann@codingthesmartway.com"
+    }
+  ],
+  "department": [
+    {
+      "id": 9,
+      "name": "Finance",
+      "descriptMon": "DEPARTMENT We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 8,
+      "name": "Operations",
+      "description": "DEPARTMENT We wont be doing anything that requires that in this demo, so a normal array is absolutely valid DEPARTMENT We wont be doing anything that requires that in this demo, so a normal array is absolutely valid "
+    },
+    {
+      "id": 10,
+      "name": "Managment",
+      "description": "DEPARTMENT We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    }
+  ],
+  "company": [
+    {
+      "id": 11,
+      "name": "avengers",
+      "departments": [
+        "Finance",
+        "Managment",
+        "Operations"
+      ],
+      "logo": "assets/Flower.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 12,
+      "name": "gurdians",
+      "departments": [
+        "Managment",
+        "Operations"
+      ],
+      "logo": "assets/Calendar.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "name": "League one",
+      "departments": [
+        "Finance",
+        "Operations"
+      ],
+      "id": 19,
+      "logo": "assets/tools.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 20,
+      "name": "League one",
+      "departments": [
+        "Finance",
+        "Operations"
+      ],
+      "logo": "assets/tools.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 21,
+      "name": "League one",
+      "departments": [
+        "Finance",
+        "Managment"
+      ],
+      "logo": "assets/Flower.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 22,
+      "name": "Boot Man",
+      "departments": [
+        "Finance",
+        "Managment"
+      ],
+      "logo": "assets/rocket.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 25,
+      "name": "x men",
+      "departments": [
+        "Finance",
+        "Managment",
+        "Operations"
+      ],
+      "logo": "assets/Pig with coins.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 30,
+      "name": "Captain Jack Sparrow",
+      "departments": [
+        "Finance",
+        "Managment",
+        "Operations"
+      ],
+      "logo": "assets/Calendar.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 31,
+      "name": "dowrf",
+      "departments": [
+        "Finance"
+      ],
+      "logo": "assets/lamp.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "id": 32,
+      "name": "Aqua Man Fat Man",
+      "departments": [
+        "Finance",
+        "Managment",
+        "Operations"
+      ],
+      "logo": "assets/tools.png",
+      "description": "COMPANY We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid We wont be doing anything that requires that in this demo, so a normal array is absolutely valid"
+    },
+    {
+      "name": "G-Unit",
+      "id": 33
+    },
+    {
+      "id": 40,
+      "name": "bjb",
+      "department": "Managment",
+      "logo": "",
+      "description": " jkarkgrenjkarkgrenv jkarkgrenv jkarkgrenjkarkgrenv"
+    },
+    {
+      "id": 41,
+      "name": "doob",
+      "department": "Developers",
+      "description": "  [Validators.required, Validators.maxLength(100)]"
+    },
+    {
+      "name": "yo",
+      "id": 42
+    },
+    {
+      "name": "dcskj",
+      "id": 43
+    },
+    {
+      "id": 44,
+      "name": "Ninja-Turtle",
+      "department": "Developers",
+      "description": "rlly silly kids"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "the title",
+      "body": "are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 2,
+      "title": "Metasploit Framework",
+      "body": "This is the official user guide for version 31 of the Metasploit Framework This guide is designed to provide an are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 3,
+      "title": "This is the official",
+      "body": "are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 4,
+      "title": "penetration testing",
+      "body": "This is the official user guide for version 31 of the Metasploit Framework This guide is designed to provide an are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 5,
+      "title": "vulnerability research",
+      "body": "are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 6,
+      "title": "guide designed",
+      "body": "This is the official user guide for version 31 of the Metasploit Framework This guide is designed to provide an are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 7,
+      "title": "vulnerability research center",
+      "body": "are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    },
+    {
+      "id": 8,
+      "title": "guide designed center",
+      "body": "This is the official user guide for version 31 of the Metasploit Framework This guide is designed to provide an are professionals performing penetration testing shellcode development and vulnerability research are professionals performing penetration testing shellcode development and vulnerability research"
+    }
+  ]
+}

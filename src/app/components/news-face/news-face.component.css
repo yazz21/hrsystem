@@ -1,0 +1,17 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+.news {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    box-shadow: rgb(0 0 0 / 87%) 0px -1px 0px 2px;
+    padding: 20px;
+    justify-content: flex-start;
+}

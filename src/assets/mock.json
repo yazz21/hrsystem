@@ -1,0 +1,129 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "gender": "Male",
+      "department": "operations",
+      "salary": 10000,
+      "branch": "green",
+      "position": "smasher",
+      "company": "avengers",
+      "phonenumber": 990909090,
+      "email": "sebastian@codingthesmartway.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "gender": "Male",
+      "department": "finance",
+      "salary": 10000,
+      "branch": "yello",
+      "position": "casher",
+      "company": "gurdians",
+      "phonenumber": 980808080,
+      "email": "steve@codingthesmartway.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "gender": "Female",
+      "department": "managment",
+      "salary": 10000,
+      "branch": "red",
+      "position": "manager",
+      "company": "justice League",
+      "phonenumber": 987654321,
+      "email": "ann@codingthesmartway.com"
+    }
+  ],
+  "department": [
+    {
+      "id": 9,
+      "name": "finance",
+      "company": "gurdians"
+    },
+    {
+      "id": 8,
+      "name": "operations",
+      "company": "gurdians"
+    },
+    {
+      "id": 9,
+      "name": "managment",
+      "company": "gurdians"
+    }
+  ],
+  "company": [
+    {
+      "name": "avengers",
+      "id": 11,
+      "logo": "assets/Calendar.png",
+      "description": "lorem"
+    },
+    {
+      "id": 12,
+      "name": "gurdians",
+      "logo": "assets/Calendar.png",
+      "description": "lorem"
+    },
+    {
+      "name": "League one",
+      "logo": "assets/tools.png",
+      "description": "lorem",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "name": "League one",
+      "logo": "assets/tools.png",
+      "description": "lorem"
+    },
+    {
+      "name": "League one",
+      "id": 21,
+      "logo": "assets/Flower.png",
+      "description": "lorem"
+    },
+    {
+      "name": "Boot Man",
+      "id": 22,
+      "logo": "assets/rocket.png",
+      "description": "lorem"
+    },
+    {
+      "name": "x men",
+      "id": 23,
+      "logo": "assets/Pig with coins.png",
+      "description": "lorem"
+    },
+    {
+      "name": "x-men",
+      "id": 25,
+      "logo": "assets/Calendar.png",
+      "description": "lorem"
+    },
+    {
+      "name": "Captain Jack Sparrow",
+      "id": 30,
+      "logo": "assets/Calendar.png",
+      "description": "lorem"
+    },
+    {
+      "name": "Aqua Man Fat Man",
+      "id": 32,
+      "logo": "assets/tools.png",
+      "description": "lorem"
+    },
+    {
+      "name": "fgggg",
+      "id": 34,
+      "logo": "assets/lamp.png",
+      "description": "lorem"
+    }
+
+  ]
+}
