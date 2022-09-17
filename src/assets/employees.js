@@ -11,7 +11,7 @@ function generateEmployees () {
     var branch = faker.address.cityName()
     var position = faker.name.jobTitle()
     var company = faker.company.bs()
-    var phonenumber = faker.phone.number()
+    var phonenumber = faker.phone.phoneNumber()
     var email = faker.internet.email()
 
     employees.push({
@@ -28,6 +28,7 @@ function generateEmployees () {
       "email": email
     })
   }
+  console.log(employees);
   return { "employees": employees }
 }
 module.exports = generateEmployees
