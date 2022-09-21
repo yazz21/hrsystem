@@ -34,7 +34,7 @@ RUN ng build --configuration=production
 FROM nginx:1.20 as ngx
 
 #copying compiled code from dist to nginx folder for serving
-COPY --from=node /media/yazz/projectvolume/Angular/hrsystem/dist/ /usr/share/nginx/html/
+COPY --from=node dist/ /usr/share/nginx/html/
 
 #copying nginx config from local to image
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
