@@ -36,6 +36,9 @@ Error failed to fetch an image or build from source: error building: unexpected 
 
   RUN chown -R /user/local/webapp/
 
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
 
 create database hrsystem;
 create table 

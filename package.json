@@ -6,7 +6,7 @@
     "start": "node server.js",
     "startdev": "ng serve",
     "heroku-postbuild": "ng build --aot --configuration=production",
-    "build:dev": "ng build --base-url",
+    "build": "ng build --base-url",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

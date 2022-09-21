@@ -15,17 +15,11 @@ WORKDIR /app
 
 COPY . .
 
-# RUN npm cache clean --force
-
 #installing deps for project
 # RUN cd app
 RUN npm install -g @angular/cli@8
 
-RUN pwd
 RUN npm install
-
-#creating angular build
-RUN pwd
 
 RUN ng build --configuration=production
 
@@ -33,16 +27,14 @@ RUN ng build --configuration=production
 #Defining nginx img
 FROM nginx:1.20 as ngx
 
-#copying compiled code from dist to nginx folder for serving
-COPY --from=node /media/yazz/projectvolume/Angular/hrsystem/dist/ /usr/share/nginx/html/
-
 #copying nginx config from local to image
-COPY /nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+#copying compiled code from dist to nginx folder for serving
+COPY ./dist/ /usr/share/nginx/html/
 
 #exposing internal port
 EXPOSE 80
-EXPOSE 8888
-
 
 # ARG configuration=production
 # RUN npm run build -- --outputPath=./dist/out --configuration $configuration

@@ -2,18 +2,17 @@
 
 app = "hr-system"
 kill_signal = "SIGINT"
-kill_timeout = 5
+kill_timeout = 120
 processes = []
 
 [env]
 
-[experimental]
-  allowed_public_ports = []
-  auto_rollback = true
+[build]
+  image = "hr-system:latest"
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 80
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
@@ -32,7 +31,7 @@ processes = []
     port = 443
 
   [[services.tcp_checks]]
-    grace_period = "1s"
+    grace_period = "30s"
     interval = "15s"
     restart_limit = 0
     timeout = "2s"

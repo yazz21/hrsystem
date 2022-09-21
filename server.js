@@ -15,4 +15,4 @@ res.sendFile(path.join(__dirname+'/dist/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
-app.listen(port);
+app.listen(port,"0.0.0.0");
