@@ -22,8 +22,7 @@ RUN npm install -g @angular/cli@8
 RUN npm install
 
 RUN npm run build --outputPath=./dist/ --configuration $configuration
-RUN ls
-RUN pwd
+
 #STEP-2 RUN
 #Defining nginx img
 FROM nginx:1.20 as ngx
