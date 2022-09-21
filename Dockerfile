@@ -8,7 +8,7 @@ FROM  node:14 as node
 #Accepting build-arg to create environment specific build
 #it is useful when we have multiple environment (e.g: dev, tst, staging, prod)
 #default value is development
-# ARG build_env=development
+ARG build_env=production
 
 #Creating virtual directory inside docker image
 WORKDIR /app
@@ -21,7 +21,7 @@ RUN npm install -g @angular/cli@8
 
 RUN npm install
 
-RUN ng build --configuration=production
+RUN npm run build --outputPath=./dist/ --configuration $configuration
 
 #STEP-2 RUN
 #Defining nginx img
