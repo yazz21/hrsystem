@@ -36,8 +36,18 @@ Error failed to fetch an image or build from source: error building: unexpected 
 
   RUN chown -R /user/local/webapp/
 
+# docker
+
 docker tag local-image:tagname new-repo:tagname
+  docker tag hr-system:latest hushyazz/hr-system
+
 docker push new-repo:tagname
+  docker push hushyazz/hr-system
+to push local image to hub
+  docker push hushyazz/hr-system:v1
+
+to deploy on fly.io from local image
+  flyctl deploy --now --local-only
 
 
 create database hrsystem;
