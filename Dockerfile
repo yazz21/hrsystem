@@ -34,7 +34,7 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 RUN ls -la /dist/
 
 #copying compiled code from dist to nginx folder for serving
-COPY ./dist/ /usr/share/nginx/html/
+COPY --from=node ./dist/ /usr/share/nginx/html/
 
 #exposing internal port
 EXPOSE 80
