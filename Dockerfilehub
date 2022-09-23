@@ -1,0 +1,3 @@
+FROM hushyazz/hr-system:lates
+ENV PORT "80"
+CMD ["-enable-url-source","-http-read-timeout" ,"3"]

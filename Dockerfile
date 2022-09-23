@@ -18,6 +18,7 @@ COPY . .
 #installing deps for project
 # RUN cd app
 RUN npm install -g @angular/cli@8
+RUN npm install -g json-server
 
 RUN npm install
 

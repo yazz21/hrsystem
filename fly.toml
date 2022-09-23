@@ -1,22 +1,16 @@
-# fly.toml file generated for spring-fog-5902 on 2022-09-23T09:02:34+03:00
+# fly.toml file generated for hr-system on 2022-09-16T15:58:27+03:00
 
-app = "spring-fog-5902"
-kill_signal = "SIGINT"
-kill_timeout = 5
+app = "hr-system"
 processes = []
-
-[build]
-  image = "hr-system"
 
 [env]
 
-[experimental]
-  allowed_public_ports = []
-  auto_rollback = true
+[build]
+  image = "hr-system:latest"
 
 [[services]]
   http_checks = []
-  internal_port = 8080
+  internal_port = 80
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
@@ -35,7 +29,7 @@ processes = []
     port = 443
 
   [[services.tcp_checks]]
-    grace_period = "1s"
+    grace_period = "30s"
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
