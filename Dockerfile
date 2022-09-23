@@ -8,7 +8,7 @@ FROM  node:14 as node
 #Accepting build-arg to create environment specific build
 #it is useful when we have multiple environment (e.g: dev, tst, staging, prod)
 #default value is development
-# ARG build_env=development
+ARG build_env=production
 
 #Creating virtual directory inside docker image
 WORKDIR /app
@@ -22,7 +22,7 @@ RUN npm install -g json-server
 
 RUN npm install
 
-RUN ng build --configuration=production
+RUN npm run build --outputPath=./dist/ --configuration $configuration
 
 #STEP-2 RUN
 #Defining nginx img
@@ -30,6 +30,8 @@ FROM nginx:1.20 as ngx
 
 #copying nginx config from local to image
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+RUN ls -la /dist/
 
 #copying compiled code from dist to nginx folder for serving
 COPY ./dist/ /usr/share/nginx/html/
