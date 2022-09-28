@@ -1,4 +1,10 @@
-FROM nginx:latest
+FROM nginx:1.23.1-alpine
 COPY ./dist/ /usr/share/nginx/html/
 
-EXPOSE 8080
+EXPOSE 80
+
+
+# apt install nodejs // need some other way otherwise use postgraess database
+# RUN npm i -g json-server
+# COPY src/assets/mockTwo.json /home
+# json-server /home/mockTwo.json

@@ -2,8 +2,7 @@
 # Defining node image and giving alias as node-helper
 # It's better to define version otherwise me might face issue in future build
 
-FROM nginx
-FROM  node:14 as node
+FROM  node:12-alpine as node
 
 #Accepting build-arg to create environment specific build
 #it is useful when we have multiple environment (e.g: dev, tst, staging, prod)
@@ -22,7 +21,9 @@ RUN npm install -g json-server
 
 RUN npm install
 
-RUN npm run build --outputPath=./dist/ --configuration $configuration
+RUN npm run build  --configuration $configuration
+
+RUN npm prune --production
 
 #STEP-2 RUN
 #Defining nginx img
